@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    max-width: 1440px;
+    background: linear-gradient(hsla(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 850px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px #333;
+    display: flex;
+}
+.image{
+    width: 55%;
+    position: relative;
+    left: -120px;
+}
+.faqContainer{
+    width: 400px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+}
+.faqContainer h2{
+    font-size: 24px;
+    margin-bottom:20px;
+}
+.qContainer{
+    border-bottom: 1px solid hsla(240, 5%, 91%, 70%);
+    margin: 5px 0;
+}
+button{
+    width: 350px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(240, 6%, 50%);
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+button:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+.answer{
+    color: hsl(240, 6%, 50%);
+    display: none;
+    font-size: 14px;
+}
+
+@media (max-width: 1050px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: content-box;
+    }
+    .image{
+        width: 250px;
+        position: relative;
+        left: 0;
+        bottom: 10%;
+    }
+    .faqContainer{
+        width: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 20px 10px 0px 10px;
+        margin-top: 20px;  
+        position: absolute;
+        bottom: -25%;
+    }
+    .faqContainer h2{
+        font-size: 24px;
+        margin-bottom:20px;
+    }
+    .qContainer{
+        border-bottom: 1px solid hsla(240, 5%, 91%, 70%);
+        margin: 5px 0;
+    }
+    button{
+        width: 300px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: hsl(240, 6%, 50%);
+        font-weight: 700;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    button:hover{
+        color: hsl(14, 88%, 65%);
+        cursor: pointer;
+    }
+    .answer{
+        color: hsl(240, 6%, 50%);
+        display: none;
+        font-size: 14px;
+    }
+}

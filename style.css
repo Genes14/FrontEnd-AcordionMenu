@@ -2,12 +2,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Kumbh Sans', sans-serif;
 }
 body{
     height: 100vh;
-    /* max-width: 1440px; */
+    max-height: 1080px;
     background: linear-gradient(hsla(273, 75%, 66%), hsl(240, 73%, 65%));
     display: flex;
     flex-direction: column;
@@ -71,7 +71,8 @@ button:hover{
 @media (max-width: 1050px){
     body{
         height: 100vh;
-        width: 100vw;
+        max-height: 1080px;
+        /* width: 100vw; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -91,14 +92,15 @@ button:hover{
     }
     .faqContainer{
         width: 275px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        margin: 20px 10px 0px 10px;
-        margin-top: 20px;  
-        position: absolute;
-        bottom: -25%;
+        margin: 0px 10px 0px 10px;
+        margin-top: 0px;  
+        position: relative;
+        bottom: 10%;
     }
     .faqContainer h2{
         font-size: 24px;
